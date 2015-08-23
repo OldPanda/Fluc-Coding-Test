@@ -45,7 +45,6 @@ put "/restaurant", provides: :json do
 
     data = JSON.parse(params[:restaurant])
     if restaurant = Restaurant.find(data["_id"])
-        # do update
         if restaurant.update_attributes(data)
             status 200
             restaurant.to_json
