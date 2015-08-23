@@ -1,0 +1,6 @@
+development:
+  sessions:
+    default:
+      database: fluc
+      hosts:
+        - localhost:27017
